@@ -42,3 +42,11 @@ ol{
 li.Links a{
     background-color:cornflowerblue;
 }
+
+.fbox{
+    display: flex;
+}
+
+.menu {
+margin-right: 10px;
+}
