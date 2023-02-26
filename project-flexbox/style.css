@@ -1,0 +1,37 @@
+body{display: flex; flex-direction: column;}
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px red solid;
+}
+
+.head, .box0, .box1, .box2, .box3{
+    border: 2px black solid;
+}
+
+.head, footer{
+    background-color: #1f2937;
+    color:white;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 50px;
+    flex:1;
+}
+.hlogo{
+    list-style: none;
+    display: flex;
+    gap:35px;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+}
+
+.head .hl1{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: auto;
+}
