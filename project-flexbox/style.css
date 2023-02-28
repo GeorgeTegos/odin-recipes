@@ -17,21 +17,70 @@ body{display: flex; flex-direction: column;}
 .head{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     padding-right: 50px;
     flex:1;
 }
 .hlogo{
+    height: 50px;
     list-style: none;
     display: flex;
     gap:35px;
     font-weight: bold;
-    width: 100%;
-    justify-content: center;
+    width: 70%;
+    align-items: center;
+    flex:0 1 auto;
 }
 
 .head .hl1{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: auto;
+    color: #f9faf8;
+
+}
+
+.box0{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #1f2937;
+    color: white;
+    gap:5em;  
+    align-items: center;
+    padding-bottom: 40px ;
+}
+
+.box0text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    align-items: center;
+    font-size: 18px;
+    color: #e5e7eb  ;
+}
+
+.but{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top:8px;
+}
+.box0image{
+    width: 400px;
+    height: 200px;
+    border: red solid 1px;
+    background-color: grey;
+    border-radius: 20px;
+
+}
+
+.box0text .htext {
+    font-weight: bolder;
+    font-size: 48px;
+    margin-bottom: 2%;
+
 }
