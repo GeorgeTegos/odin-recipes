@@ -2,14 +2,10 @@ body{display: flex; flex-direction: column;}
 .container {
     display: flex;
     flex-direction: column;
-    border: 2px red solid;
+    width: auto;
 }
 
-.head, .box0, .box1, .box2, .box3{
-    border: 2px black solid;
-}
-
-.head, footer{
+.head, .foot{
     background-color: #1f2937;
     color:white;
 }
@@ -62,17 +58,17 @@ body{display: flex; flex-direction: column;}
 }
 
 .but{
-    background-color: blue;
+    background-color: dodgerblue;
     color: white;
+    font-weight: bolder;
     width: 100px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top:8px;
 }
 .box0image{
     width: 400px;
     height: 200px;
-    border: red solid 1px;
     background-color: grey;
     border-radius: 20px;
 
@@ -83,4 +79,115 @@ body{display: flex; flex-direction: column;}
     font-size: 48px;
     margin-bottom: 2%;
 
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-bottom: 50px;
+}
+
+.box1buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 150px;
+    flex:1;
+    gap:3em;
+}
+
+.but1, .but2, .but3, .but4 {
+    border: 3px #3882f6 solid;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.infoT{
+    font-size: 36px ;
+    color: #1f2937;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.op1, .op2, .op3, .op4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 150px;
+    gap:1em;
+}
+
+.box2 {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.box2text{
+    font-size:36px;
+    font-style: italic;
+    font-weight:lighter;
+    color: #1f2937;
+    width: 700px;
+}
+ .box2quote{
+    display: flex;
+    font-weight: bolder;
+    font-size: 20px;
+
+ }
+
+ .box22{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+    height: 250px;
+    gap: 10px;
+    
+ }
+
+ .box3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 30px;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+}
+
+.box3text{
+    font-weight: bolder;
+}
+
+.box3button{
+    background-color: #3882f6;
+    border: 2px white solid;
+    color: white;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+ .foot{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
