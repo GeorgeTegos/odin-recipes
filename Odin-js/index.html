@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <title>JS fun</title>
+    </head>
+    <body>
+        <button>Click Here</button>
+        <script>
+            const button = document.querySelector("button");
+
+            function greet(){
+                const name = prompt("what is your name?");
+                alert(`Hello, ${name}, nice to see you!`);
+            }
+            button.addEventListener("click", greet);
+        </script>
+
+
+    </body>
+</html>
