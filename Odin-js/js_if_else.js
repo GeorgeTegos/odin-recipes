@@ -7,6 +7,25 @@
     function setweather(){
         const choice = select.value;
 
+        switch(choice){
+            case 'sunny':
+                para.textContent = "Sunny"
+                break;
+            case 'rainy':
+                para.textContent = "Rain"
+                break;
+            case 'snowing':
+                para.textContent = "Snowing"
+                break;
+            case 'overcast':
+                para.textContent = "Overcast"
+                break;
+            default:
+                para.textContent = ""
+        }
+    }
+
+/*
         if (choice === 'sunny'){
             para.textContent = "It's sunny day"
         } else if (choice === "rainy"){
@@ -18,4 +37,4 @@
         } else {
             para.textContent = ""
         }
-    }
+    } */
