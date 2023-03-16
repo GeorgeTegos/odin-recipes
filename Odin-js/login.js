@@ -2,9 +2,10 @@ let question = prompt("Who's there")
 
 if  (question == "Admin") {
     let password = prompt("Password?")
-    if (password == "TheMaster")
+    if (password == "TheMaster"){
         alert("Welcome!")
-    else if (password == null  || password == "") {
+    }
+        else if (password == null  || password == "") {
         alert("Canceled")
     }
     else{
