@@ -1,8 +1,19 @@
 
-    const select = document.querySelector('select');
+    const select = document.querySelector('select#weather');
     const para = document.querySelector('p');
-
+    const html = document.querySelector('html');
+    const bg = document.querySelector('select#theme');
+    
     select.addEventListener('change', setweather);
+    
+    function update(bgColor,textColor){
+        html.style.backgroundColor = bgColor;
+        html.style.color = textColor;
+    }
+    bg.addEventListener('change', () => bg.value === 'black'
+    ? update('black','white')
+    : update('white','black')
+    )
 
     function setweather(){
         const choice = select.value;
