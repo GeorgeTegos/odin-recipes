@@ -6,8 +6,37 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>Regular Expressions</p>
+    
+  <!--  <div id="register">
+        <form class="test">
+            <p>Sing Up</p>
+            <label for="name-field"><input id="name-field"><br>Name</label>
+            <label for="email"><input id="email"><br>E-mail</label>
+            <label for="password"><input id="password"><br>Password</label>
+            <label for="phone"><input id="phone"><br>Phone</label>
+            <label for="slug"><input id="slug"><br>Profile Slug</label>
+        </form>
+    </div>
+-->
+    <h1>Sing up</h1>
+    <form class="register">
+        <input type="text" name="username" placeholder="username">
+        <p>Username must contain 5-12 characters</p>
 
+        <input type="text" name="email" placeholder="email">
+        <p>Email must be valid address, eg  me@myemail.com</p>
 
-    </body>
+        <input type="password" name="password" placeholder="password">
+        <p>Password must be Alphanumeric (@,_ and - are allowed) and be 8-20 characters</p>
+
+        <input type="text" name="phone" placeholder="phone">
+        <p>Telephone must be UK number (11 digits)</p>
+
+        <input type="text"  name="slug" placeholder="slug">
+        <p>Slug must contain only lowercase letters, number and hypnens , 8-20 characters</p>
+
+        <button>Sing up!</button>
+    </form>
+
+</body>
 </html>
