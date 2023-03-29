@@ -58,8 +58,46 @@
     / .+ /      =   Any Character (but can't be zero) matches
 */
 /*  .. Starting & Ending pattern ..
+
     / ^[a-z]{5} /      Expression after ^ means that it has to be at the START of the string to match
+
+
     / [a-z]{5}$ /      Expression before $ means that it has to be at the END of the string to match
     / ^[a-z]{5}$ /     It has to be 5 letters at the start of the string and it ends right after it to match.
 
     */
+
+/* Code Below */
+
+const inputs = document.querySelectorAll('input'); // Select all our input fields
+
+const patterns = {
+    phone: /^\d{11}$/, 
+    username : /^[a-z\d]{5,12}$/i,
+    email: /^[a-z0-9]*@[a-z]*\.com$/i,
+    password: /^[a-z0-9@\-_]{8,20}$/i,
+    slug: /^[a-z0-9\-]{8,20}$/
+}
+/*
+const username    = / ^[a-z0-9]{5,12}$ /i;
+const email       = / ^[a-z0-9]*@[a-z]*\.com$ /i;
+const password    = / ^[a-z0-9@\-_]{8,20}$/i;
+const phone       = / ^\d{11}$ /;
+const slug        = / ^[a-z0-9\-]{8,20}$/;  */
+
+// Validation Fuction
+function Validation(field,regex){ // Create Function to check our Regex
+   if(regex.test(field.value)){  // Test the regex pattern
+        field.className = 'valid'
+   }  else {
+        field.className = 'invalid'
+   }
+
+}
+
+inputs.forEach((input) => {         // circle around inputs
+    input.addEventListener('keyup',(e) => { // e = event
+        //console.log(e.target.attributes.name.value);    // select our input values when type
+        Validation(e.target , patterns[e.target.attributes.name.value])
+    });
+});
