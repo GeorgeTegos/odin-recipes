@@ -75,7 +75,7 @@ const patterns = {
     phone: /^\d{11}$/, 
     username : /^[a-z\d]{5,12}$/i,
     email: /^[a-z\d]*@[a-z]*\.com$/i,
-    password: /^[a-z\d@\-_]{8,20}$/i,
+    password: /^[\w@-]{8,20}$/i,
     slug: /^[a-z\d\-]{8,20}$/
 }
 /*
