@@ -74,7 +74,7 @@ const inputs = document.querySelectorAll('input'); // Select all our input field
 const patterns = {
     phone: /^\d{11}$/, 
     username : /^[a-z\d]{5,12}$/i,
-    email: /^[a-z\d]*@[a-z]*\.com$/i,
+    email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i,
     password: /^[\w@-]{8,20}$/i,
     slug: /^[a-z\d\-]{8,20}$/
 }
