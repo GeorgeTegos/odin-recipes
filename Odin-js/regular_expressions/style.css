@@ -29,3 +29,26 @@ button:hover{
     background-color: darkblue;
     color: yellow;
 }
+
+input.valid{
+    border: green solid 5px;
+}
+
+input.invalid{
+    border: red solid 5px;
+}
+
+input + P {
+    color: orange;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 10px;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + P{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
