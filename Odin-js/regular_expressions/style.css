@@ -5,6 +5,10 @@ form.register, h1{
     gap: 5px;
 }
 
+::placeholder{
+    text-align: center;
+}
+
 input{
     width: 300px;
     height: 40px;

@@ -78,13 +78,6 @@ const patterns = {
     password: /^[\w@-]{8,20}$/i,
     slug: /^[a-z\d\-]{8,20}$/
 }
-/*
-const username    = / ^[a-z0-9]{5,12}$ /i;
-const email       = / ^[a-z0-9]*@[a-z]*\.com$ /i;
-const password    = / ^[a-z0-9@\-_]{8,20}$/i;
-const phone       = / ^\d{11}$ /;
-const slug        = / ^[a-z0-9\-]{8,20}$/;  */
-
 // Validation Fuction
 function Validation(field,regex){ // Create Function to check our Regex
    if(regex.test(field.value)){  // Test the regex pattern
